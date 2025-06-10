@@ -1,4 +1,3 @@
-
 let backhome2 = document.getElementById("backhome2") as HTMLButtonElement;
 
 interface QuestionOption {
@@ -19,9 +18,9 @@ const questions: Question[] = [
       { text: "something calm, so as not to rush", genre: "jazz" },
       { text: "an energetic track to wake you up", genre: "rock" },
       { text: "background for reflection", genre: "indie" },
-      { text: "whatever comes your way", genre: "pop" },
+      { text: "whatever comes your way", genre: "r&b" },
       { text: "hip hop to set the mood", genre: "hip-hop" },
-      { text: "classical or jazz", genre: "jazz" },
+      { text: "country or jazz", genre: "country" },
       { text: "pop- easy and familiar", genre: "pop" },
     ]
   },
@@ -135,7 +134,7 @@ const questions: Question[] = [
   {
     text: "12. Do you listen to music from other cultures or countries?",
     options: [
-      { text: "Yes, constantly", genre: "world" },
+      { text: "Yes, constantly", genre: "jazz" },
       { text: "Sometimes, for variety", genre: "indie" },
       { text: "Only if popular", genre: "pop" },
       { text: "No, prefer local music", genre: "country" }
@@ -198,7 +197,7 @@ const questions: Question[] = [
       { text: "Drums", genre: "metal" },
       { text: "Bass", genre: "hip-hop" },
       { text: "Synthesizer", genre: "electronic" },
-      { text: "Violin", genre: "classical" },
+      { text: "Violin", genre: "jazz" },
       { text: "Saxophone", genre: "jazz" },
       { text: "Vocals", genre: "pop" },
       { text: "No, love all", genre: "indie" }
@@ -221,7 +220,7 @@ const questions: Question[] = [
       { text: "Get inspired", genre: "indie" },
       { text: "Cry", genre: "r&b" },
       { text: "Dream", genre: "electronic" },
-      { text: "Work", genre: "classical" },
+      { text: "Work", genre: "country" },
       { text: "Escape reality", genre: "metal" }
     ]
   },
@@ -284,7 +283,7 @@ function calculateResult() {
 
   const resultDiv = document.getElementById("result")!;
   if (topGenre) {
-    resultDiv.innerHTML = `Youre musical genr: <strong>${topGenre.toUpperCase()}</strong>`;
+    resultDiv.innerHTML = `Youre musical genre: <strong>${topGenre.toUpperCase()}</strong>`;
   }
 }
 
